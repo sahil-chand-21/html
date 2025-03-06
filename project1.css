@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+  
+}
+.nav{
+    padding-top: 2vh;
+    padding-right: 6vh;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+   align-items: center;
+    justify-content:flex-end;
+    gap: 2vh;
+}
+.nav h4{
+    width: auto;
+    font-family: monospace;
+    font-size: 1.5vw;
+}
+.font h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    padding: 4vh 8vh;
+    font-size: 5.7vw;
+    line-height:5vw;
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+}
+.second p{
+    font-family:'Courier New', Courier, monospace;
+    padding: 3vh 8vh;
+    font-size: 1.8vw;
+}
+.list ul{
+    margin-right: 4vw;
+}
+.list ul li{
+    border-top: 2px solid black;
+    margin-right: 4vw;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list ul li a{
+   padding:  1vw 1.8vw;
+  font-size: 1.4vw;
+   
+    text-decoration: none;
+    color: black;
+}
+.list ul li  i{
+    width: auto;
+    opacity: 0;
+}
+.list ul :hover i {
+    opacity: 1;
+}
+.list ul :hover a{
+    text-decoration: underline;
+}
+.bottom{
+    box-sizing: border-box;
+    width: auto;
+    background-color: red;
+    height: 36%;
+    background-image: url(https://images.unsplash.com/photo-1542363428949-744795ed6beb?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position:  0 30%;
+}
+
+/* this is to make the website responsive */
+@media (max-width:600px) {
+    .nav{
+        padding-top: 2vw;
+        padding-right: 4vw;
+        width: 100%;
+        height: 6vh;
+        display: flex;
+       align-items: center;
+        justify-content:flex-end;
+        gap: 2vh;
+    }
+    .nav h4{
+        width: auto;
+        font-family: monospace;
+        font-size: 3vw;
+    }
+    .font h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 100;
+        padding: 3vh 8vw;
+        font-size: 7.7vw;
+        line-height: 7vw;
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+    }
+    .second p{
+        font-family:'Courier New', Courier, monospace;
+        padding: 1vh 9vw;
+        font-size: 3vw;
+    }
+    .list{
+        margin: 4vw 0 ;
+    }
+    .list ul{
+        margin-right: 4vw;
+        margin-left: 8vw;   
+    }
+    .list ul li{
+        border-top: 2px solid black;
+        margin-right: 4vw;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .list ul li a{
+        padding: 2vw 1.8vw;
+        font-size: 3.4vw;   
+        text-decoration: none;
+        color: black;
+    }
+    .list ul li  i{
+        width: auto;
+        opacity: 0;
+    }
+    .list ul :hover i {
+        opacity: 1;
+    }
+    .list ul :hover a{
+        text-decoration: underline;
+    }
+    
+}
